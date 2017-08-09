@@ -1,24 +1,18 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
+# Build Artifacts
+.gradle
+build
+target
+gradle
+classes
+out/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IDEA artifacts and output dirs
 *.iml
 *.ipr
+*.iws
+*.idea
 
-### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+# Eclipse artifacts
+.classpath
+.project
+.settings/
