@@ -19,7 +19,7 @@ public class SayController {
 
     @RequestMapping("/hi")
     @ResponseBody
-    public String sayHi(@RequestParam(value = "name")String name){
+    public String sayHi(@RequestParam(value = "name") String name) {
         return sayService.sayHiFromClientOne(name);
     }
 

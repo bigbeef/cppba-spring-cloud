@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(value = "service-say")
 public interface SayService {
-    @RequestMapping(value = "/hi",method = RequestMethod.GET)
+    @RequestMapping(value = "/hi", method = RequestMethod.GET)
     String sayHiFromClientOne(@RequestParam(value = "name") String name);
 }
