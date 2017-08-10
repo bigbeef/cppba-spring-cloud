@@ -33,6 +33,7 @@
 
     <modules>
         <module>cppba-spring-cloud-eureka-server</module>
+        <module>cppba-spring-cloud-eureka-client</module>
     </modules>
 
 </project>
