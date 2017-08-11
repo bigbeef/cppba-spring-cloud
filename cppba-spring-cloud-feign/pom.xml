@@ -22,4 +22,15 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<finalName>${project.name}</finalName>
+		<plugins>
+			<!--打包可执行的jar-->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>
