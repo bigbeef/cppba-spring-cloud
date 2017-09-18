@@ -20,7 +20,7 @@ public class SayController {
     @RequestMapping("/hi")
     @ResponseBody
     public String sayHi(@RequestParam(value = "name") String name) {
-        return sayService.sayHiFromClientOne(name);
+        return sayService.sayHi(name);
     }
 
 }
