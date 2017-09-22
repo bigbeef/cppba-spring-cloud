@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Dalston.SR3</spring-cloud.version>
-        <platform-bom.version>Brussels-SR4</platform-bom.version>
+        <platform-bom.version>Brussels-SR5</platform-bom.version>
     </properties>
 
     <dependencyManagement>
