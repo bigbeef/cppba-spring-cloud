@@ -18,6 +18,7 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Dalston.SR3</spring-cloud.version>
         <platform-bom.version>Brussels-SR5</platform-bom.version>
+        <springfox-swagger.version>2.7.0</springfox-swagger.version>
     </properties>
 
     <dependencyManagement>
@@ -35,6 +36,16 @@
                 <version>${platform-bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox-swagger.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

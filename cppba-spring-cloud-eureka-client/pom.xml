@@ -14,6 +14,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.cppba</groupId>
+			<artifactId>cppba-spring-cloud-eureka-client-api</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
@@ -24,11 +29,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-client</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.cppba</groupId>
-			<artifactId>cppba-spring-cloud-eureka-client-api</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
