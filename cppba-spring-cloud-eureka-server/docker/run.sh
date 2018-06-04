@@ -6,7 +6,7 @@ port2="8762"
 
 # (确保已经登陆docker)
 # 停止并移除服务
-docker rm -f $(docker ps -a -f "name=${app_name}")
+docker rm -f $(docker ps -a -f "name=${app_name}" -q)
 # 移除镜像
 docker rmi winfed/${app_name}
 # 构建镜像
