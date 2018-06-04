@@ -1,6 +1,8 @@
 #!/bin/bash
 
 app_name="cppba-spring-cloud-eureka-server"
+
+# (确保已经登陆docker)
 # 停止并移除服务
 docker rm -f ${app_name}
 # 移除镜像
