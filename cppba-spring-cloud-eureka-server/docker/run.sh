@@ -1,3 +1,5 @@
+#!/bin/bash
+
 app_name="cppba-spring-cloud-eureka-server"
 # 停止并移除服务
 docker rm -f ${app_name}
