@@ -51,12 +51,12 @@
     </dependencyManagement>
 
     <modules>
-        <module>cppba-spring-cloud-config-server</module>
+        <!--<module>cppba-spring-cloud-config-server</module>-->
         <module>cppba-spring-cloud-eureka-server</module>
-        <module>cppba-spring-cloud-eureka-client</module>
-        <module>cppba-spring-cloud-eureka-client-api</module>
-        <module>cppba-spring-cloud-feign</module>
-        <module>cppba-spring-cloud-sleuth</module>
+        <!--<module>cppba-spring-cloud-eureka-client</module>-->
+        <!--<module>cppba-spring-cloud-eureka-client-api</module>-->
+        <!--<module>cppba-spring-cloud-feign</module>-->
+        <!--<module>cppba-spring-cloud-sleuth</module>-->
     </modules>
 
 </project>
