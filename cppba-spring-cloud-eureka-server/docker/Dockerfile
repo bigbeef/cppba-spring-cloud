@@ -2,6 +2,6 @@ FROM java:8u111-jre-alpine
 MAINTAINER 245655812@qq.com
 ADD cppba-spring-cloud-eureka-server.jar /app.jar
 EXPOSE 8080
-COPY docker-entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["docker-entrypoint.sh"]
-#ENTRYPOINT ["java","-jar","app.jar"]
+COPY docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]
