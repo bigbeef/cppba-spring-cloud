@@ -12,5 +12,5 @@ docker rmi winfed/${app_name}
 # 构建镜像
 docker build -t winfed/${app_name} .
 # 启动一个容器
-docker run -d --name ${app_name}-${port1} -p ${port1}:8080 winfed/${app_name}
-# docker run -d --name ${app_name}-${port2} -p ${port2}:8080 winfed/${app_name}
+docker run -d --name ${app_name}-${port1} -p ${port1}:8080 --entrypoint="java -jar -Denv=pro app.jar" winfed/${app_name}
+# docker run -d --name ${app_name}-${port2} -p ${port2}:8080 --entrypoint="java -jar -Denv=pro app.jar" winfed/${app_name}
