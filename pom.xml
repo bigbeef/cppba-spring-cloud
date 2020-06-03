@@ -10,15 +10,15 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.6.RELEASE</version>
+        <version>1.5.22.RELEASE</version>
     </parent>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Dalston.SR3</spring-cloud.version>
-        <platform-bom.version>Brussels-SR5</platform-bom.version>
-        <springfox-swagger.version>2.7.0</springfox-swagger.version>
+        <spring-cloud.version>Dalston.SR5</spring-cloud.version>
+        <spring-boot.version>1.5.22.RELEASE</spring-boot.version>
+        <springfox-swagger.version>2.9.2</springfox-swagger.version>
     </properties>
 
     <dependencyManagement>
@@ -30,10 +30,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- spring-boot -->
             <dependency>
-                <groupId>io.spring.platform</groupId>
-                <artifactId>platform-bom</artifactId>
-                <version>${platform-bom.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -51,12 +52,12 @@
     </dependencyManagement>
 
     <modules>
-        <!--<module>cppba-spring-cloud-config-server</module>-->
+        <module>cppba-spring-cloud-config-server</module>
         <module>cppba-spring-cloud-eureka-server</module>
-        <!--<module>cppba-spring-cloud-eureka-client</module>-->
-        <!--<module>cppba-spring-cloud-eureka-client-api</module>-->
-        <!--<module>cppba-spring-cloud-feign</module>-->
-        <!--<module>cppba-spring-cloud-sleuth</module>-->
+        <module>cppba-spring-cloud-eureka-client</module>
+        <module>cppba-spring-cloud-eureka-client-api</module>
+        <module>cppba-spring-cloud-feign</module>
+        <module>cppba-spring-cloud-sleuth</module>
     </modules>
 
 </project>

@@ -1,4 +1,4 @@
-FROM java:8u111-jre-alpine
+FROM openjdk:8-jdk-alpine
 MAINTAINER 245655812@qq.com
 ADD cppba-spring-cloud-eureka-server.jar /app.jar
 EXPOSE 8080
